@@ -14,7 +14,7 @@ const TextPart = ({
     iconClasses,
     icon
 }) => (
-    <div className={wrapperClasses}>
+    <div className={'flex justify-center flex-col ' +wrapperClasses}>
         <Icon icon={icon} classes={iconClasses}/>
         <Title text={title} classes={titleClasses} />
         <Paragraph text={text} classes={textClasses} />
@@ -23,3 +23,9 @@ const TextPart = ({
 )
 
 export default TextPart
+
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+
+//widrh fit
