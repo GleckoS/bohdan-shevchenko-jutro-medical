@@ -5,7 +5,7 @@ import { PreventScroll } from "../functions/preventScroll";
 
 export default function Home() {
 
-  // useEffect(() => { PreventScroll() }, [])
+  useEffect(() => { PreventScroll() }, [])
 
   const [currState, changeCurrState] = useState({ ...apiValues.firstState })
   const [currStateNum, changeCurrStateNum] = useState(1)

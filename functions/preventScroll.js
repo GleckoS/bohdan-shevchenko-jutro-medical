@@ -25,6 +25,7 @@ export const PreventScroll = () => {
 
     // call this to Disable
     (function disableScroll() {
+        window.scrollTo(0, 0);
         window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
         window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
         window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
