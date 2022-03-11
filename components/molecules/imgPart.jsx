@@ -2,12 +2,14 @@ import react from "react";
 import IphoneScreen from "../atoms/iphoneScreen";
 
 const ImgPart = ({
-    img,
+    images,
     wrapperClasses,
-    imgClasses
+    imgClasses,
+    currStateNum
 }) => (
-    <div className={"bg-cover bg-no-repeat mt-[80px] min-w-[610px] " + wrapperClasses} >
-        <IphoneScreen img={img} classes={imgClasses} />
+    <div className={"absolute right-0 top-[80px] min-w-[610px] " + wrapperClasses} >
+        <IphoneScreen img={currStateNum === 1 ? images[0] : images[2]} classes={imgClasses} />
+        <IphoneScreen img={images[1]} classes={imgClasses} />
     </div>
 )
 

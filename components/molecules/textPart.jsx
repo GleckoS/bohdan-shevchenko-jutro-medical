@@ -14,7 +14,7 @@ const TextPart = ({
     iconClasses,
     icon
 }) => (
-    <div className={'flex justify-center flex-col ' +wrapperClasses}>
+    <div className={'max-w-[630px] fixed top-1/4' +wrapperClasses}>
         <Icon icon={icon} classes={iconClasses}/>
         <Title text={title} classes={titleClasses} />
         <Paragraph text={text} classes={textClasses} />
