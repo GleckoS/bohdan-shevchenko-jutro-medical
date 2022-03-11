@@ -7,6 +7,10 @@ module.exports = {
   theme: {
     extend: {
     },
+    screens: {
+      '2xl': { 'max': '1535px' },
+      '2xlm': { 'min': '1536px' }
+    }
   },
   plugins: [],
 }

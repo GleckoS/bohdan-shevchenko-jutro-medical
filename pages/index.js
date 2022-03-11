@@ -5,7 +5,7 @@ import { PreventScroll } from "../functions/preventScroll";
 
 export default function Home() {
 
-  useEffect(() => { PreventScroll() }, [])
+  // useEffect(() => { PreventScroll() }, [])
 
   const [currState, changeCurrState] = useState({ ...apiValues.firstState })
   const [currStateNum, changeCurrStateNum] = useState(1)
@@ -56,7 +56,6 @@ export default function Home() {
 
   return (
     <main>
-
       <div className="bg-sky-800 bg-emerald-400 text-slate-700 bg-pink-300 hidden" /> {/* dynamic styles */}
       <FlexWrapper
         {...currState}

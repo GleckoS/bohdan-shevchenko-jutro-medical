@@ -14,7 +14,7 @@ const TextPart = ({
     iconClasses,
     icon
 }) => (
-    <div className={'max-w-[630px] fixed top-1/4' +wrapperClasses}>
+    <div className={'transition-all duration-500 max-w-[612px] fixed 2xlm:top-1/4 2xl:left-2/4 2xl:-translate-x-2/4 2xl:w-full ' + wrapperClasses}>
         <Icon icon={icon} classes={iconClasses}/>
         <Title text={title} classes={titleClasses} />
         <Paragraph text={text} classes={textClasses} />

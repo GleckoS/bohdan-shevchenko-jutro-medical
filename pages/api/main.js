@@ -17,7 +17,7 @@ export const apiValues = {
         icon: Download.src
     },
     secondState: {
-        title: 'Pobierz aplikację',
+        title: 'Porozmawiaj z lekarzem',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. ',
         linkText: 'Pobierz aplikację',
         background: 'bg-sky-800',
@@ -26,7 +26,7 @@ export const apiValues = {
         icon: Talk.src
     },
     thirdState: {
-        title: 'Pobierz aplikację',
+        title: 'Otrzymaj receptę',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. ',
         linkText: 'Pobierz aplikację',
         background: 'bg-pink-300',
