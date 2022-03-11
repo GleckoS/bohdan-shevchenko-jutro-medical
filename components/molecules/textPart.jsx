@@ -23,9 +23,3 @@ const TextPart = ({
 )
 
 export default TextPart
-
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-
-//widrh fit
