@@ -4,7 +4,7 @@ import TextPart from "../molecules/textPart";
 
 const FlexWrapper = (props) => (
     <div className={"transition " + props.background + ' ' + props.organismClasses}>
-        <div className="h-[1660px] max-w-[1380px] mx-auto px-[32px] relative 2xl:h-auto">
+        <div className="h-[1390px] max-w-[1370px] mx-auto px-[25px] relative 2xl:h-auto">
             <TextPart
                 {...props}
                 linkClasses={props.buttonBackground}
@@ -20,6 +20,7 @@ const FlexWrapper = (props) => (
                 imgClasses=''
             />
             <StateControl
+                textClasses={props.textColor}
                 changeCurrState={props.changeCurrState}
                 wrapperClasses=''
             />

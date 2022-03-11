@@ -9,7 +9,9 @@ module.exports = {
     },
     screens: {
       '2xl': { 'max': '1535px' },
-      '2xlm': { 'min': '1536px' }
+      '2xlm': { 'min': '1536px' },
+      'xl': { 'max': '820px' },
+      'm': { 'max': '660px' }
     }
   },
   plugins: [],

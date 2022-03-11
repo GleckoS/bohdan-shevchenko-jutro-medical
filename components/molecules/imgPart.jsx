@@ -7,10 +7,13 @@ const ImgPart = ({
     imgClasses,
     currStateNum
 }) => (
-    <div className={"absolute right-0 top-[80px] min-w-[610px] 2xl:relative 2xl:mx-auto 2xl:w-fit 2xl:py-[620px] 2xl:top-0" + wrapperClasses} >
-        <IphoneScreen img={currStateNum === 1 ? images[0] : images[2]} classes={imgClasses} />
-        <IphoneScreen img={images[1]} classes={imgClasses} />
+    <div className={"absolute right-0 top-[80px] min-w-[610px] 2xl:relative 2xl:mx-auto 2xl:w-fit 2xl:py-[620px] 2xl:top-0 2xl:min-w-[310px] 2xl:max-w-[610px] 2xl:w-full " + wrapperClasses} >
+        <IphoneScreen img={images[0]} classes={imgClasses + (currStateNum === 1 ? ' opacity-100' : ' 2xl:hidden opacity-0')} />
+        <IphoneScreen img={images[1]} classes={imgClasses + (currStateNum === 2 ? ' opacity-100' : ' 2xl:hidden opacity-0')} />
+        <IphoneScreen img={images[2]} classes={imgClasses + (currStateNum === 3 ? ' opacity-100' : ' 2xl:hidden opacity-0')} />
     </div>
 )
 
-export default ImgPart 
+export default ImgPart
+
+//currStateNum - 1
